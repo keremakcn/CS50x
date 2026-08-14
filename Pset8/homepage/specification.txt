@@ -1,0 +1,24 @@
+HTML tags:
+nav
+a
+main
+h1
+p
+h2
+ul
+li
+ol
+button
+
+CSS properties:
+font-family
+margin
+background-color
+color
+padding
+
+JavaScript:
+I used JavaScript to display a message when the user clicks the button.
+
+Bootstrap:
+I used Bootstrap to help style and organize my website.

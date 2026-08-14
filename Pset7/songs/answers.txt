@@ -1,0 +1,5 @@
+Title: Spotify Wrapped
+
+The listener enjoys energetic and danceable music.
+
+This may not fully reflect the listener, as we are basing this on only 100 songs. A better approach would be to analyze all the songs the listener has played.

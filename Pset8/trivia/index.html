@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Trivia!</title>
+
+        <script>
+            function checkAnswer(event)
+            {
+                let button = event.target;
+
+                if (button.innerHTML == "Jupiter")
+                {
+                    button.style.backgroundColor = "green";
+                    button.parentElement.querySelector(".feedback").innerHTML = "Correct!";
+                }
+                else
+                {
+                    button.style.backgroundColor = "red";
+                    button.parentElement.querySelector(".feedback").innerHTML = "Incorrect";
+                }
+            }
+
+            function checkText(event)
+            {
+                let button = event.target;
+                let input = button.parentElement.querySelector("input");
+
+                if (input.value.toLowerCase() == "paris")
+                {
+                    input.style.backgroundColor = "green";
+                    input.parentElement.querySelector(".feedback").innerHTML = "Correct!";
+                }
+                else
+                {
+                    input.style.backgroundColor = "red";
+                    input.parentElement.querySelector(".feedback").innerHTML = "Incorrect";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Trivia!</h1>
+            <p>Test your knowledge</p>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+
+                <h2>Part 1: Multiple Choice</h2>
+
+                <hr>
+
+                <h3>What is the largest planet in our solar system?</h3>
+
+                <div class="answers">
+                    <button onclick="checkAnswer(event)">Earth</button>
+                    <button onclick="checkAnswer(event)">Mars</button>
+                    <button onclick="checkAnswer(event)">Jupiter</button>
+                    <button onclick="checkAnswer(event)">Venus</button>
+                </div>
+
+                <p class="feedback"></p>
+
+            </div>
+
+
+            <div class="section">
+
+                <h2>Part 2: Free Response</h2>
+
+                <hr>
+
+                <h3>What is the capital of France?</h3>
+
+                <div class="free-answer">
+                    <input type="text" placeholder="Type your answer...">
+
+                    <button onclick="checkText(event)">Check Answer</button>
+                </div>
+
+                <p class="feedback"></p>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
