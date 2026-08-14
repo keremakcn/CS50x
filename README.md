@@ -86,7 +86,9 @@ The course also helped me become more comfortable reading unfamiliar code, debug
 
 ## 🏆 Certificate
 
-I successfully completed **Harvard University's CS50x – Introduction to Computer Science** and received the **CS50 certificate**.
+I successfully completed **Harvard University's CS50x – Introduction to Computer Science**.
+
+![CS50 Certificate](certificate.png)
 
 ## 🔗 About CS50x
 
